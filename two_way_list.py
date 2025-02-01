@@ -327,3 +327,5 @@ class TwoWayList(ParentList):
     def get_left_status(self) -> None:
         # возвращает значение LEFT_*
         return self.left_status
+
+
