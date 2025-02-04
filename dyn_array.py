@@ -23,10 +23,10 @@ class DynArray:
 
     ## Запросы    
     def _create_array(self, new_capacity: int):
-        # Постусловие: максимальный размер массива устанавливается на заданное значение
         return (new_capacity * ctypes.py_object)()
 
     def _resize(self, new_capacity: int):
+        # Постусловие: максимальный размер массива и вместимость массива устанавливаются на заданное значение
         new_array = self._create_array(new_capacity)
         for i in range(self.get_count()):
             new_array[i] = self.array[i]
